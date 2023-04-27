@@ -8,6 +8,8 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (maximal - minimal + 1)) + minimal;
 }
 
+export default getRandomIntInclusive;
+
 const askUserAnswer = () => {
   const userAnswer = readlineSync.question('Answer: ');
 
@@ -34,6 +36,8 @@ const gcd = (a, b) => {
   return gcd(b, a % b);
 };
 
+const getRandomNumber = (number = 100) => Math.floor(Math.random() * number);
+
 export {
 
   gcd,
@@ -44,4 +48,5 @@ export {
 
   areUserRight,
 
+  getRandomNumber,
 };
