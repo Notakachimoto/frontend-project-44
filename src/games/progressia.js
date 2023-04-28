@@ -2,8 +2,6 @@ import { getRandomNumber, getRandomIntInclusive } from '../util.js';
 
 import game from '../index.js';
 
-const gameTask = 'What number is missing in the progression?';
-
 const expression = () => {
   const randomSum = getRandomNumber(10);
 
@@ -25,5 +23,5 @@ const expression = () => {
 };
 
 export default function brainProgression() {
-  game(gameTask, expression);
+  game(expression);
 }

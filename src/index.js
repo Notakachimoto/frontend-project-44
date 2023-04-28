@@ -6,6 +6,7 @@ export default function game(gameTask, question) {
   console.log(gameTask);
 
   const username = welcome();
+  console.log('What number is missing in the progression?');
 
   for (let i = 0; i < 3; i += 1) {
     const [random, answer] = question();
