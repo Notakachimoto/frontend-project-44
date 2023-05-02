@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 
 import welcome from '../cli.js';
 
+// eslint-disable-next-line import/no-named-as-default
 import getRandomIntInclusive from '../util.js';
 
 const isEven = (number) => (number % 2 === 0);
